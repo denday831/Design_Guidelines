@@ -1,0 +1,24 @@
+h2[data-type="section-heading"] {
+    width: 100%;
+    border-bottom: 1px solid #888;
+    color: #444;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 60px;
+}
+
+pre.prettyprint {
+    display: none;
+    margin: 30px 0!important;
+    padding: 15px!important;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    margin-top: -50px;
+    padding-top: 50px;
+    z-index: 1;
+}
