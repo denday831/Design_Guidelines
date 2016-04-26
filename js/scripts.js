@@ -76,6 +76,18 @@ $('.code-content').resizable({
     maxWidth: "90%"
 });
 
+$(".brand .icon-mobile").click(function() {
+   $(".code-content").width("600px"); 
+});
+
+$(".brand .icon-tablet").click(function() {
+   $(".code-content").width("768px"); 
+});
+
+$(".brand .icon-desktop").click(function() {
+   $(".code-content").width("992px"); 
+});
+
 $(window).resize(function(e) {
   if (e.target == window)
     $('.code-content').width("50%")
@@ -90,7 +102,7 @@ $(window).resize(function(e) {
 // Toggle <pre>
 //------------------------------------------------------
 $("*").click(function(){
-    $(this).next("pre").slideToggle("slow");
+    $(this).next("pre").slideToggle("medium");
 });
 
 

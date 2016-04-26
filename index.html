@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Design Guidelines | BPP University</title>
+    <title>Digital Framework | BPP University</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="build/css/style.min.css">
@@ -18,7 +18,7 @@
             <li><a href="">Colour</a></li>
             <li><a href="">Navigation</a></li>
             <li><a href="">Typography & Iconography</a></li>
-            <li><a href="">Buttons, Fileds & Tabs</a></li>
+            <li><a href="">Buttons, Fields & Tabs</a></li>
             <li><a href="">Global Patterns</a></li>
         </ul>
     </nav>
@@ -33,6 +33,11 @@
       <div class="brand">
         <img class="hidden-xs" src="images/design_guidelines_logo.png" alt="BPP Design Guidelines">
         <img class="visible-xs-inline-block" src="https://s3-eu-west-1.amazonaws.com/bppassets/public/assets/img/logos/logo-bpp.png" alt="BPP University">
+        <div class="size-selectors">
+          <span class="bppicon icon-mobile hidden-xs pull-right">&nbsp;</span>
+          <span class="bppicon icon-tablet hidden-sm hidden-xs pull-right">&nbsp;</span>
+          <span class="bppicon icon-desktop hidden-sm hidden-xs hidden-md pull-right">&nbsp;</span>
+        </div>
       </div>
     </header>
     <div class="wrapper">
@@ -42,42 +47,87 @@
                     
               <h2 data-type="section-heading">Headers</h2>
             
-              <h1>Heading 1</h1>
+<h1>Headline<br />
+    Level 1</h1>
 <pre class="prettyprint">
 h1 {
-    padding: 10px;
+    font-family: 'Open Sans';
+    font-size: 35px;
+    font-weight: lighter;
+    line-height: 1.4;
+    color: #4a4a4a;
 }
+
+<&zwj;h1>Headline Level 1<&zwj;/h1>
 </pre>
               
-              <h2>Heading 2</h2>
+<h2>Headline<br />Level 2</h2>
 <pre class="prettyprint">
 h2 {
-    padding: 10px;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: lighter;
+    line-height: 1.5;
+    color: #4a4a4a;
 }
+
+<&zwj;h2>Headline Level 2<&zwj;/h2>
 </pre>
-              <h3>Heading 3</h3>
+
+<h3>Heading 3</h3>
 <pre class="prettyprint">
 h3 {
     padding: 10px;
 }
+
+<&zwj;h3>Heading 3<&zwj;/h3>
 </pre>
-              <h4>Heading 4</h4>
+
+<h4>Heading 4</h4>
 <pre class="prettyprint">
 h4 {
     padding: 10px;
 }
+
+<&zwj;h4>Heading 4<&zwj;/h4>
 </pre>
-              <h5>Heading 5</h5>
+
+<h5>Heading 5</h5>
 <pre class="prettyprint">
 h5 {
     padding: 10px;
 }
+
+<&zwj;h5>Heading 5<&zwj;/h5>
 </pre>
-              <h6>Heading 6</h6>
+
+<h6>Heading 6</h6>
 <pre class="prettyprint">
 h6 {
     padding: 10px;
 }
+
+<&zwj;h6>Heading 6<&zwj;/h6>
+</pre>
+
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              
+<h1 class="bppicon icon-email">Headline Level 1 Icon</h1>
+<pre class="prettyprint">
+h1 {
+    font-family: 'Open Sans';
+    font-size: 35px;
+    font-weight: lighter;
+    line-height: 1.4;
+    color: #4a4a4a;
+}
+
+.bppicon.icon-email:before {
+	content: "\2709";
+	font-family: BPPIcons;
+}
+
+<&zwj;h1 class="bppicon icon-email">Headline Level 1 Icon<&zwj;/h1>
 </pre>
                 
 
