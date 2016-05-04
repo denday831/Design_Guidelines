@@ -9,6 +9,9 @@
 .bppicon:before {
     padding-right:15px;
 }
+.bppicon.block-icon:before {
+    display: block;
+}
 .bppicon.icon-daytime:before {
 	content: "\f185";
 	font-family: BPPIcons;

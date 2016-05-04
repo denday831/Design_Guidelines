@@ -17,7 +17,7 @@
         <ul>
             <li><a href="">Colour</a></li>
             <li><a href="">Navigation</a></li>
-            <li><a href="">Typography & Iconography</a></li>
+            <li><a href="#typography">Typography & Iconography</a></li>
             <li><a href="">Buttons, Fields & Tabs</a></li>
             <li><a href="">Global Patterns</a></li>
         </ul>
@@ -45,7 +45,7 @@
         <div class="container code-content">
             <div class="col-sm-12">
                     
-              <h2 data-type="section-heading">Headers</h2>
+              <h2 data-type="section-heading" id="typography">Typography</h2>
             
 <h1>Headline<br />
     Level 1</h1>
@@ -56,6 +56,11 @@ h1 {
     font-weight: lighter;
     line-height: 1.4;
     color: #4a4a4a;
+    margin-bottom: 35px;
+}
+
+p + h1, ul + h1 {
+    margin-top: 35px;
 }
 
 <&zwj;h1>Headline Level 1<&zwj;/h1>
@@ -71,47 +76,131 @@ h2 {
     color: #4a4a4a;
 }
 
+p + h2, ul + h2 {
+    margin-top: 35px;
+}
+
 <&zwj;h2>Headline Level 2<&zwj;/h2>
 </pre>
 
-<h3>Heading 3</h3>
+<h3>Headline<br />Level 3</h3>
 <pre class="prettyprint">
 h3 {
-    padding: 10px;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 1.5;
+    color: #4a4a4a;
 }
 
-<&zwj;h3>Heading 3<&zwj;/h3>
+p + h3, ul + h3 {
+    margin-top: 35px;
+}
+
+<&zwj;h3>Headline Level 3<&zwj;/h3>
 </pre>
 
-<h4>Heading 4</h4>
+<h4>Headline<br />Level 4</h4>
 <pre class="prettyprint">
 h4 {
-    padding: 10px;
+    font-family: 'Open Sans';
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #4a4a4a;
 }
 
-<&zwj;h4>Heading 4<&zwj;/h4>
+p + h4, ul + h4 {
+    margin-top: 8px;
+}
+
+<&zwj;h4>Headline Level 4<&zwj;/h4>
 </pre>
 
-<h5>Heading 5</h5>
+<p>Paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim elit convallis nunc consectetur, in varius tellus facilisis. Suspendisse eu feugiat dui, sed blandit ipsum.</p>
 <pre class="prettyprint">
-h5 {
-    padding: 10px;
+p {
+    font-family: 'Open Sans';
+    font-size: 17px;
+    line-height: 1.9;
+    color: #4a4a4a;
 }
 
-<&zwj;h5>Heading 5<&zwj;/h5>
+<&zwj;p>Paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim elit convallis nunc consectetur, in varius tellus facilisis. Suspendisse eu feugiat dui, sed blandit ipsum.<&zwj;/p>
 </pre>
 
-<h6>Heading 6</h6>
+<ul>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+</ul>
 <pre class="prettyprint">
-h6 {
-    padding: 10px;
+ul {
+    margin: 17px 0;
 }
 
-<&zwj;h6>Heading 6<&zwj;/h6>
+ul li:before {
+	content: "\25cb";
+	font-family: BPPIcons;
+    padding-right: 5px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    background: none;
+    padding-left: 0;
+    font-size: 17px;
+}
+
+<&zwj;ul class="bppicon icon-task">
+    <&zwj;li>List item<&zwj;/li>
+    <&zwj;li>List item<&zwj;/li>
+    <&zwj;li>List item<&zwj;/li>
+    <&zwj;li>List item<&zwj;/li>
+    <&zwj;li>List item<&zwj;/li>
+    <&zwj;li>List item<&zwj;/li>
+<&zwj;/ul>
 </pre>
 
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              
+<p class="accordion">Accordion</p>
+<pre class="prettyprint">
+.accordion h1, .accordion h2, .accordion h3, .accordion h4 {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+</pre>
+
+<p class="button">Button</p>
+<pre class="prettyprint">
+.btn {
+    font-size: 15px;
+    line-height: 1.9;
+}
+</pre>
+
+<p class="footer-button">Footer button</p>
+<pre class="prettyprint">
+footer .btn {
+    font-size: 12px;
+    line-height: 2.4;
+}
+</pre>
+
+<p class="navigation-tip">Navigation tip</p>
+<pre class="prettyprint">
+.navigation-tip {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+</pre>
+
+<h2 data-type="section-heading">Iconography</h2>              
 <h1 class="bppicon icon-email">Headline Level 1 Icon</h1>
 <pre class="prettyprint">
 h1 {
@@ -120,6 +209,11 @@ h1 {
     font-weight: lighter;
     line-height: 1.4;
     color: #4a4a4a;
+    margin-bottom: 35px;
+}
+
+p + h1, ul + h1 {
+    margin-top: 35px;
 }
 
 .bppicon.icon-email:before {
@@ -128,6 +222,180 @@ h1 {
 }
 
 <&zwj;h1 class="bppicon icon-email">Headline Level 1 Icon<&zwj;/h1>
+</pre>
+              
+<h2 class="bppicon icon-email">Headline Level 2</h2>
+<pre class="prettyprint">
+h2 {
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: lighter;
+    line-height: 1.5;
+    color: #4a4a4a;
+}
+
+p + h2, ul + h2 {
+    margin-top: 35px;
+}
+
+.bppicon.icon-email:before {
+	content: "\2709";
+	font-family: BPPIcons;
+}
+
+<&zwj;h2 class="bppicon icon-email">Headline Level 2<&zwj;/h2>
+</pre>
+
+<h3 class="bppicon icon-email">Headline Level 3</h3>
+<pre class="prettyprint">
+h3 {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 1.5;
+    color: #4a4a4a;
+}
+
+p + h3, ul + h3 {
+    margin-top: 35px;
+}
+
+.bppicon.icon-email:before {
+	content: "\2709";
+	font-family: BPPIcons;
+}
+
+<&zwj;h3 class="bppicon icon-email">Headline Level 3<&zwj;/h3>
+</pre>
+
+<h4 class="bppicon icon-email">Headline Level 4</h4>
+<pre class="prettyprint">
+h4 {
+    font-family: 'Open Sans';
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #4a4a4a;
+}
+
+p + h4, ul + h4 {
+    margin-top: 8px;
+}
+
+.bppicon.icon-email:before {
+	content: "\2709";
+	font-family: BPPIcons;
+}
+
+<&zwj;h4 class="bppicon icon-email">Headline Level 4<&zwj;/h4>
+</pre>
+
+<p class="bppicon icon-email">Paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim elit convallis nunc consectetur, in varius tellus facilisis. Suspendisse eu feugiat dui, sed blandit ipsum.</p>
+<pre class="prettyprint">
+p {
+    font-family: 'Open Sans';
+    font-size: 17px;
+    line-height: 1.9;
+    color: #4a4a4a;
+}
+
+.bppicon.icon-email:before {
+	content: "\2709";
+	font-family: BPPIcons;
+}
+
+<&zwj;p class="bppicon icon-email">Paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim elit convallis nunc consectetur, in varius tellus facilisis. Suspendisse eu feugiat dui, sed blandit ipsum.<&zwj;/p>
+</pre>
+
+<p class="bppicon icon-starFull">New</p>
+<pre class="prettyprint">
+
+.bppicon.icon-starFull:before {
+	content: "\2605";
+	font-family: BPPIcons;
+}
+
+<&zwj;span class="bppicon icon-starFull">New<&zwj;/span>
+</pre>
+
+<ul class="bppicon icon-task">
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+</ul>
+<pre class="prettyprint">
+ul {
+    margin: 17px 0;
+}
+
+ul.bppicon.icon-task:before {
+    content: ''
+}
+
+ul.bppicon.icon-task li:before {
+	content: "\f1df";
+	font-family: BPPIcons;
+    padding-right: 5px;
+}
+
+ul.bppicon.icon-task {
+    padding-left: 0;
+}
+
+ul.bppicon.icon-task li {
+    background: none;
+    padding-left: 0;
+    font-size: 17px;
+}
+
+<&zwj;ul class="bppicon icon-task">
+    <&zwj;li>List item<&zwj;/li>
+    <&zwj;li>List item<&zwj;/li>
+    <&zwj;li>List item<&zwj;/li>
+    <&zwj;li>List item<&zwj;/li>
+    <&zwj;li>List item<&zwj;/li>
+    <&zwj;li>List item<&zwj;/li>
+<&zwj;/ul>
+</pre>
+
+<p class="button bppicon icon-email">Button - Icon</p>
+<pre class="prettyprint">
+.btn {
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.btn.bppicon:before {
+    padding-right: 5px;
+}
+
+.bppicon.icon-email:before {
+	content: "\2709";
+	font-family: BPPIcons;
+}
+
+<&zwj;a href="btn"><&zwj;span class="bppicon icon-email">Button - Icon<&zwj;/span><&zwj;/a>
+/* Span inside the <&zwj;a> stops the icon from appearing outside the button */
+</pre>
+
+<p class="navigation-tip bppicon block-icon icon-email text-center">Navigation<br />tip - Icon</p>
+<pre class="prettyprint">
+.navigation-tip {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.bppicon.icon-email:before {
+	content: "\2709";
+	font-family: BPPIcons;
+}
+
+.bppicon.block-icon:before {
+    display: block;
+}
 </pre>
                 
 
